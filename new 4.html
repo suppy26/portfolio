@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mangapuram Supriya | Portfolio</title>
+  <style>
+    :root {
+      --bg-color: #f9f9f9;
+      --text-color: #333;
+      --header-bg: #2c3e50;
+      --header-text: #fff;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: var(--bg-color);
+      color: var(--text-color);
+      transition: background 0.3s, color 0.3s;
+    }
+    header {
+      background: var(--header-bg);
+      color: var(--header-text);
+      padding: 30px;
+      text-align: center;
+    }
+    nav a {
+      color: var(--header-text);
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    section {
+      padding: 40px;
+      max-width: 900px;
+      margin: auto;
+      animation: fadeIn 1s ease-in;
+    }
+    h2 {
+      color: var(--header-bg);
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 10px;
+    }
+    .projects {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .project-card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex: 1 1 calc(45%);
+      transition: transform 0.3s;
+    }
+    .project-card:hover {
+      transform: scale(1.05);
+    }
+    footer {
+      background: var(--header-bg);
+      color: var(--header-text);
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #2c3e50;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background 0.3s;
+    }
+    .btn:hover {
+      background: #1a252f;
+    }
+    #darkToggle {
+      margin-top: 15px;
+      cursor: pointer;
+      background: #fff;
+      color: #2c3e50;
+      border: none;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+    }
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Mangapuram Supriya</h1>
+    <p>Software Developer | AI & ML Enthusiast</p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#education">Education</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button id="darkToggle">Toggle Dark Mode</button>
+  </header>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p>I am a motivated and enthusiastic B.Tech student specializing in Computer Science Engineering (AI & ML) at Mohan Babu University. Passionate about Artificial Intelligence, Generative AI, and software development. I love learning new technologies, building real-world projects, and continuously improving my problem-solving skills.</p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>HTML, CSS</li>
+      <li>Python (Basics)</li>
+      <li>SQL (Basics)</li>
+      <li>Artificial Intelligence & Machine Learning Fundamentals</li>
+      <li>Microsoft Office (Word, Excel, PowerPoint)</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul>
+      <li><strong>Mohan Babu University</strong> — B.Tech CSE (AI & ML), CGPA: 8.20 (Expected Graduation: 2027)</li>
+      <li><strong>Narayana College</strong> — Intermediate, 90% (2023)</li>
+      <li><strong>Sri Chaitanya Techno School</strong> — SSC, CGPA: 10.0 (2021)</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects">
+      <div class="project-card">
+        <h3>CNN Image Classifier</h3>
+        <p>Developed a convolutional neural network to classify images with high accuracy.</p>
+      </div>
+      <div class="project-card">
+        <h3>Database Management System Mini Project</h3>
+        <p>Worked on a basic SQL project to manage student records efficiently.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>📧 Email: supriyamangapuram2498@gmail.com</p>
+    <p>📞 Phone: +91 9390466941</p>
+    <p>📍 Location: Tirupati, Andhra Pradesh</p>
+    <p><a class="btn" href="Mangapuram_Supriya_Resume_Updated.pdf" download>Download Resume</a></p>
+  </section>
+
+  <footer>
+    <p>© 2026 Mangapuram Supriya | Designed with ❤️</p>
+  </footer>
+
+  <script>
+    const toggleBtn = document.getElementById('darkToggle');
+    toggleBtn.addEventListener('click', () => {
+      if (document.body.style.background === 'rgb(249, 249, 249)') {
+        document.body.style.background = '#121212';
+        document.body.style.color = '#f9f9f9';
+      } else {
+        document.body.style.background = '#f9f9f9';
+        document.body.style.color = '#333';
+      }
+    });
+  </script>
+</body>
+</html>
